@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Pedra, Papel e Tesoura</h1>
+        <div class="result-container">
+            <div>
+                <p class="pading">Player</p>
+                <img id="jogadaPlayer" src="./img/interrogacao.png" alt="?">
+            </div>
+            <p id="resultado">esperando jogada</p>
+            <div>
+                <p class="pading">Computador</p>
+                <img id="jogadaComputador" src="./img/interrogacao.png" alt="?">
+            </div>
+        </div>
+
+        <div class="score-container">
+            <div id="vitorias" class="score">0 Vitorias</div>
+            <div id="derrotas" class="score">0 Derrotas</div>
+            <div id="empates" class="score">0 Empates</div>
+            <div id="rounds" class="score">0 Rounds</div>
+        </div>
+
+        <div class="choose-container">
+            <p class="pTitle pading">Escolha sua jogada</p>
+            <button onclick="jogar('pedra')"><img src="./img/pedra.png" alt="Pedra"></button>
+            <button onclick="jogar('papel')"><img src="./img/papel.png" alt="Papel"></button>
+            <button onclick="jogar('tesoura')"><img src="./img/tesoura.png" alt="Tesoura"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
