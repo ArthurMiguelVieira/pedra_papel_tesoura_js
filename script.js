@@ -79,7 +79,11 @@ function jogar(escolhaUsuario) {
             resultados.innerHTML = "Vitória";
             vitoria++;
             vitorias.textContent = vitoria.toString() + " Vitórias";
+        }else{
+             console.error("Condição inesperada! escolhaUsuario:", escolhaUsuario, "escolhaComputador:", escolhaComputador); 
         }
+        
+    
 
         // Atualiza o número de rounds
         round++;
